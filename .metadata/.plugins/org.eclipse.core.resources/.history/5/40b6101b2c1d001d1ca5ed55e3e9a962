@@ -1,0 +1,10 @@
+package com.demo;
+
+import org.springframework.stereotype.Component;
+
+@Component(value="v2")  //<bean id="v1" class="com.demo.Bike" primary="true"></bean>
+public class Bike implements Vehicle {
+	public void move() {
+		System.out.println("Bike is Moving");
+	}
+}

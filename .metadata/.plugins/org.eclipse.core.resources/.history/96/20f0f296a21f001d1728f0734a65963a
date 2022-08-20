@@ -1,0 +1,17 @@
+package com.productapp.api;
+
+import org.springframework.stereotype.Controller;
+
+import com.productapp.service.ProductService;
+
+@Controller
+public class ProductController {
+	
+	private ProductService productService;
+
+	public ProductController(ProductService productService) {
+		this.productService = productService;
+	}
+	
+
+}

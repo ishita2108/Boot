@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="01_bankapp"/>
+<aop-project name="03_spring_di_bean_annotation"/>
+<aop-project name="00_need_spring"/>
+<aop-project name="productappV6-Jsp"/>
+<aop-project name="productappV1"/>
+<aop-project name="01_need_spring2"/>
+<aop-project name="productappWebApp"/>
+<aop-project name="02_spring_di_annotation"/>
+<aop-project name="00_bankapp"/>
+<aop-project name="05_bankapp_xml"/>
+<aop-project name="springSec"/>
+</aop-reference-model>

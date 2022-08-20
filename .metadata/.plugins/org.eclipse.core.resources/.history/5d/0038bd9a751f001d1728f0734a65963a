@@ -1,0 +1,2 @@
+server.servlet.context-path=/productapp
+server.port=8082

@@ -1,0 +1,5 @@
+package com.springSec.config;
+
+public class AppSecurityConfig {
+
+}

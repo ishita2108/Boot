@@ -1,0 +1,5 @@
+package com.springSec.controller;
+
+public class SecController {
+
+}

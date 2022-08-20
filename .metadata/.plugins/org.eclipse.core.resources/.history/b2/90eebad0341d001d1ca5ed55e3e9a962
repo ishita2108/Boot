@@ -1,0 +1,7 @@
+package com.bankapp.model.persistence;
+
+
+import java.util.List;
+public interface AccountDao {
+
+}

@@ -1,0 +1,5 @@
+package com.springSec.dao;
+
+public class UserEntity {
+
+}

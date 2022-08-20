@@ -1,0 +1,44 @@
+package com.config;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
+
+import com.demo.Bike;
+import com.demo.Car;
+import com.demo.Passenger;
+import com.demo.Vehicle;
+
+@Configuration
+@ComponentScan(basePackages = {"com.demo"})
+public class AppConfig {
+
+	
+//	<bean id="passenger"  class="com.demo.Passenger">
+//	<property name ="name" value="Ishitaa"/>
+//	<property name ="vehicle" ref="v"/>
+//	</bean>
+	@Autowired
+	@Bean(name="passenger")
+	public Passenger getPassenger(Vehicle vehicle) {
+		Passenger passenger = new Passenger();
+		passenger.setName("Raj");
+		passenger.setVehicle(vehicle);
+		return passenger;
+		
+	}
+	@Bean
+	@Primary
+	public Vehicle getCar() {
+		Vehicle vehicle = new Car();
+		return vehicle;
+	}
+	
+	@Bean
+	public Vehicle getBike() {
+		Vehicle vehicle = new Bike();
+		return vehicle;
+	}
+}

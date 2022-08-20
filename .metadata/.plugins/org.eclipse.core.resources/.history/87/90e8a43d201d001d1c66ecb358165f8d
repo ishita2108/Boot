@@ -1,0 +1,14 @@
+package com.demo;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Vehicle vehicle = new Car();
+		Passenger passenger = new Passenger();
+		passenger.setName("Ishita");
+		passenger.setVehicle(Car);
+		passenger.travel();
+
+	}
+
+}
